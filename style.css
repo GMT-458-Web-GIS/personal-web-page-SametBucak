@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+
+}
+
+body {
+    overflow: hidden;
+    background: #1D1E2D;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.box {
+    position: absolute;
+    top: 200px;
+    left: -220px;
+    background: rgb(0, 183, 255);
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    clip-path: circle(75%);
+    z-index: -11;
+    animation: circle 3s infinite;
+}
+
+
+
+@keyframes circle {
+    0% {
+        clip-path: circle(35%);
+    }
+
+    50% {
+
+        clip-path: circle(75%);
+    }
+
+    100% {
+        clip-path: circle(35%);
+    }
+}
+
+.box-2 {
+    height: 500px;
+    width: 500px;
+    background: #1D1E2D;
+    z-index: 1;
+}
+
+.nav {
+    width: 100%;
+    padding: 50px 200px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0px 40px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ul li a {
+    font-size: 18px;
+    color: rgb(0, 183, 255);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: rgb(0, 183, 255);
+}
+
+.nav .logo img {
+    width: 100px;
+}
+
+
+.content .left .men {
+
+    width: 300px;
+    top: 50px;
+    position: relative;
+    left: 80px;
+    z-index: 111;
+    border-radius: 50%
+
+}
+
+.content .right {
+    position: relative;
+    bottom: 40px;
+    margin-left: 280px;
+    padding-right: 10px;
+}
+
+.content .right h1 {
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.content .right p {
+    color: #656565;
+    margin-bottom: 10px;
+}
+
+.content .right button {
+    margin: 10px;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background: rgb(0, 183, 255);
+    color: #1D1E2D;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.content .right button:hover {
+    background: white;
+
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.social a i {
+    font-size: 30px;
+    margin: 0 20px;
+    color: rgb(0, 183, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.social a i:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.social .bxl-instagram {
+    font-size: 30px;
+}
+
+.content .right h2 {
+
+    color:#fff;
+}
